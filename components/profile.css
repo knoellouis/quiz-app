@@ -1,11 +1,13 @@
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
   background: var(--color-background--light);
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: var(--radius-card);
+  text-align: center;
 }
 
 .about__user {
@@ -14,13 +16,13 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 33%;
+  width: 100%;
 }
 
 .about__user-description {
   display: flex;
   flex-direction: column;
-  width: 66%;
+  width: 100%;
 }
 
 .about__user-image {
@@ -38,6 +40,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .overview__item {
@@ -134,4 +138,20 @@
 .setting__switch input:focus-visible + .setting__slider {
   outline: 2px solid var(--color-secondary);
   outline-offset: 3px;
+}
+
+@media screen and (min-width: 560px) {
+  .about {
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    padding: 30px 20px;
+  }
+  .about__user {
+    width: 33%;
+  }
+
+  .about__user-description {
+    width: 66%;
+  }
 }
