@@ -27,15 +27,14 @@ footer .nav__item a {
   align-items: center;
   text-align: center;
   gap: 5px;
-  /* color: purple; */
-
-  /* fill: purple; */
+  transition: var(--base-transition);
 }
 
 footer .nav__item .icon {
   background-color: inherit;
 }
 
-footer .nav__item a[aria-current="page"] {
+footer .nav__item a[aria-current="page"],
+footer .nav__item a:hover {
   color: var(--color-secondary);
 }
