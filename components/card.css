@@ -1,0 +1,22 @@
+.question-card {
+  position: relative;
+  background: var(--color-background--light);
+  padding: 20px;
+  border-radius: var(--radius-card);
+}
+
+.question-card__bookmark {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.question-card__answer {
+  font-family: var(--font-question);
+}

@@ -1,11 +1,11 @@
 :root {
   /* Brand */
-  --color-midnight: #171a2b;
-  --color-burgundy: #672d3d;
+  --color-background: #171a2b;
+  --color-button: #672d3d;
   --color-gold: #d5b46a;
   --color-parchment: #f2e9d8;
   --color-forest: #263d35;
-  --color-surface: #34384a;
+  --color-background--light: #34384a;
 
   /* Text */
   --color-text: #f8f4ec;
@@ -14,13 +14,14 @@
   /* Typography */
   --font-heading: "Cinzel", serif;
   --font-question: "Lora", serif;
-  --font-ui: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
 
   /* Layout */
   --radius-card: 16px;
   --radius-button: 10px;
   --space-card: 24px;
   --content-max-width: 1100px;
+  --base-width: 92%;
 
   /* Transition */
   --base-transition: all 0.3s ease-in-out;
@@ -42,9 +43,9 @@
 }
 
 body {
-  font-family: var(--font-body), serif;
+  font-family: var(--font-body), sans-serif;
   line-height: 1.5;
-  background-color: var(--color-midnight);
+  background-color: var(--color-background);
   color: var(--color-text);
 }
 
@@ -54,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading), sans-serif;
+  font-family: var(--font-question), serif;
   line-height: 1.2;
   margin: 0.5em 0;
   color: var(--color-primary);
