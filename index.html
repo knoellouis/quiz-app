@@ -7,132 +7,234 @@
     <title>Thinkly</title>
   </head>
   <body class="app">
+    <a class="skip-link" href="#main-content">
+      <span>Skip to main content </span></a
+    >
     <header class="app__header">
       <h1 class="app__title">Thinkly</h1>
     </header>
-    <main class="questions">
+    <main id="main-content" class="questions">
+      <!-- Question 1 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           What is the name of the school that Harry Potter attends?
         </h2>
-        <p class="question-card__answer-text">
+        <p id="answer-1" class="question-card__answer-text">
           Hogwarts School of Witchcraft and Wizardry
         </p>
-        <button class="question-card__answer-toggle">Conceal Answer</button>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="true"
+          aria-controls="answer-1"
+        >
+          Conceal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Hogwarts</li>
           <li class="question-card__tag">Fiction</li>
         </ul>
       </article>
+
+      <!-- Question 2 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           Who is Harry Potter's best friend throughout the series?
         </h2>
-        <p hidden class="question-card__answer-text">Ron Weasley</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-2" class="question-card__answer-text" hidden>
+          Ron Weasley
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-2"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Characters</li>
           <li class="question-card__tag">Friends</li>
         </ul>
       </article>
+
+      <!-- Question 3 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           What is the name of the lightning bolt-shaped scar on Harry Potter's
           forehead?
         </h2>
-        <p hidden class="question-card__answer-text">The Dark Mark</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-3" class="question-card__answer-text" hidden>
+          The Dark Mark
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-3"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Symbolism</li>
           <li class="question-card__tag">Scar</li>
         </ul>
       </article>
+
+      <!-- Question 4 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           Which magical creature guards the entrance to the Gryffindor common
           room?
         </h2>
-        <p hidden class="question-card__answer-text">The Fat Lady (portrait)</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-4" class="question-card__answer-text" hidden>
+          The Fat Lady (portrait)
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-4"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Creatures</li>
           <li class="question-card__tag">Gryffindor</li>
         </ul>
       </article>
+
+      <!-- Question 5 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           What is the name of the game played on flying broomsticks in the
           wizarding world?
         </h2>
-        <p hidden class="question-card__answer-text">Quidditch</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-5" class="question-card__answer-text" hidden>Quidditch</p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-5"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Sports</li>
           <li class="question-card__tag">Magic</li>
         </ul>
       </article>
+
+      <!-- Question 6 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           What is the name of the three-headed dog that guards the Sorcerer's
           Stone?
         </h2>
-        <p hidden class="question-card__answer-text">Fluffy</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-6" class="question-card__answer-text" hidden>Fluffy</p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-6"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Creatures</li>
           <li class="question-card__tag">Sorcerer's Stone</li>
         </ul>
       </article>
+
+      <!-- Question 7 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           Which professor is the head of Slytherin House at Hogwarts?
         </h2>
-        <p hidden class="question-card__answer-text">Severus Snape</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-7" class="question-card__answer-text" hidden>
+          Severus Snape
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-7"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Characters</li>
           <li class="question-card__tag">Hogwarts</li>
         </ul>
       </article>
+
+      <!-- Question 8 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           What is the name of the dark wizard who killed Harry Potter's parents
           and tried to kill him as a baby?
         </h2>
-        <p hidden class="question-card__answer-text">
+        <p id="answer-8" class="question-card__answer-text" hidden>
           Lord Voldemort (Tom Riddle)
         </p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-8"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Villains</li>
           <li class="question-card__tag">Characters</li>
         </ul>
       </article>
+
+      <!-- Question 9 -->
+
       <article class="question-card">
         <h2 class="question-card__title">What type of creature is Dobby?</h2>
-        <p hidden class="question-card__answer-text">House Elf</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-9" class="question-card__answer-text" hidden>House Elf</p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-9"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Creatures</li>
           <li class="question-card__tag">Dobby</li>
         </ul>
       </article>
+
+      <!-- Question 10 -->
+
       <article class="question-card">
         <h2 class="question-card__title">
           What magical object allows the Marauders to create a map of Hogwarts
           that shows its layout and the location of people within it?
         </h2>
-        <p hidden class="question-card__answer-text">The Marauder's Map</p>
-        <button class="question-card__answer-toggle">Reveal Answer</button>
+        <p id="answer-10" class="question-card__answer-text" hidden>
+          The Marauder's Map
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-10"
+        >
+          Reveal Answer
+        </button>
         <ul class="question-card__tags">
           <li class="question-card__tag">Harry Potter</li>
           <li class="question-card__tag">Magical Objects</li>
@@ -142,9 +244,21 @@
     </main>
     <footer>
       <ul class="nav">
-        <li class="nav__item"><a href="index.html">Home</a></li>
-        <li class="nav__item"><a href="bookmarks.html">Bookmarks</a></li>
-        <li class="nav__item"><a href="profile.html">Profile</a></li>
+        <li class="nav__item">
+          <a href="index.html"
+            ><img src="" alt="home icon" /><span>Home</span></a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="bookmarks.html"
+            ><img src="" alt="bookmarks icon" /><span>Bookmarks</span></a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="profile.html"
+            ><img src="" alt="profile icon" /><span>Profile</span></a
+          >
+        </li>
       </ul>
     </footer>
   </body>
