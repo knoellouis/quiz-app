@@ -3,6 +3,10 @@
   background: var(--color-background--light);
   padding: 20px;
   border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .question-card__bookmark {

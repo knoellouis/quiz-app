@@ -6,4 +6,5 @@
   max-width: var(--content-max-width);
   width: var(--base-width);
   margin: 0 auto;
+  text-align: center;
 }
