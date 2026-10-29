@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
   background: var(--color-background--light);
   padding: 20px;
   border-radius: var(--radius-card);
@@ -143,7 +142,7 @@
 @media screen and (min-width: 560px) {
   .about {
     flex-direction: row;
-    gap: 0;
+    gap: 20px;
     text-align: left;
     padding: 30px 20px;
   }
