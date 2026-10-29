@@ -6,5 +6,189 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Thinkly - Bookmarks</title>
   </head>
-  <body></body>
+  <body class="app">
+    <a class="skip-link" href="#main-content">
+      <span>Skip to main content </span></a
+    >
+    <header class="app__header">
+      <h1 class="app__title">Thinkly</h1>
+    </header>
+    <main id="main-content" class="questions">
+      <!-- Question 1 -->
+
+      <article class="question-card">
+        <button
+          type="button"
+          aria-label="bookmark question"
+          aria-pressed="true"
+        >
+          <img src="./Images/bookmark.svg" alt="bookmark icon" />
+        </button>
+        <h2 class="question-card__title">
+          What is the name of the school that Harry Potter attends?
+        </h2>
+        <p id="answer-1" class="question-card__answer-text">
+          Hogwarts School of Witchcraft and Wizardry
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="true"
+          aria-controls="answer-1"
+        >
+          Conceal Answer
+        </button>
+        <ul class="question-card__tags">
+          <li class="question-card__tag">Harry Potter</li>
+          <li class="question-card__tag">Hogwarts</li>
+          <li class="question-card__tag">Fiction</li>
+        </ul>
+      </article>
+
+      <!-- Question 3 -->
+
+      <article class="question-card">
+        <button
+          type="button"
+          aria-label="bookmark question"
+          aria-pressed="true"
+        >
+          <img src="./Images/bookmark.svg" alt="bookmark icon" />
+        </button>
+        <h2 class="question-card__title">
+          What is the name of the lightning bolt-shaped scar on Harry Potter's
+          forehead?
+        </h2>
+        <p id="answer-3" class="question-card__answer-text" hidden>
+          His lightning-bolt scar (The Dark Mark)
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-3"
+        >
+          Reveal Answer
+        </button>
+        <ul class="question-card__tags">
+          <li class="question-card__tag">Harry Potter</li>
+          <li class="question-card__tag">Symbolism</li>
+          <li class="question-card__tag">Scar</li>
+        </ul>
+      </article>
+
+      <!-- Question 5 -->
+
+      <article class="question-card">
+        <button
+          type="button"
+          aria-label="bookmark question"
+          aria-pressed="true"
+        >
+          <img src="./Images/bookmark.svg" alt="bookmark icon" />
+        </button>
+        <h2 class="question-card__title">
+          What is the name of the game played on flying broomsticks in the
+          wizarding world?
+        </h2>
+        <p id="answer-5" class="question-card__answer-text" hidden>Quidditch</p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-5"
+        >
+          Reveal Answer
+        </button>
+        <ul class="question-card__tags">
+          <li class="question-card__tag">Harry Potter</li>
+          <li class="question-card__tag">Sports</li>
+          <li class="question-card__tag">Magic</li>
+        </ul>
+      </article>
+
+      <!-- Question 7 -->
+
+      <article class="question-card">
+        <button
+          type="button"
+          aria-label="bookmark question"
+          aria-pressed="true"
+        >
+          <img src="./Images/bookmark.svg" alt="bookmark icon" />
+        </button>
+        <h2 class="question-card__title">
+          Which professor is the head of Slytherin House at Hogwarts?
+        </h2>
+        <p id="answer-7" class="question-card__answer-text" hidden>
+          Severus Snape
+        </p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-7"
+        >
+          Reveal Answer
+        </button>
+        <ul class="question-card__tags">
+          <li class="question-card__tag">Harry Potter</li>
+          <li class="question-card__tag">Characters</li>
+          <li class="question-card__tag">Hogwarts</li>
+        </ul>
+      </article>
+
+      <!-- Question 9 -->
+
+      <article class="question-card">
+        <button
+          type="button"
+          aria-label="bookmark question"
+          aria-pressed="true"
+        >
+          <img src="./Images/bookmark.svg" alt="bookmark icon" />
+        </button>
+        <h2 class="question-card__title">What type of creature is Dobby?</h2>
+        <p id="answer-9" class="question-card__answer-text" hidden>House Elf</p>
+        <button
+          class="question-card__answer-toggle"
+          aria-expanded="false"
+          aria-controls="answer-9"
+        >
+          Reveal Answer
+        </button>
+        <ul class="question-card__tags">
+          <li class="question-card__tag">Harry Potter</li>
+          <li class="question-card__tag">Creatures</li>
+          <li class="question-card__tag">Dobby</li>
+        </ul>
+      </article>
+    </main>
+    <footer>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="index.html" aria-current="page" aria-label="Home"
+              ><img
+                src="./Images/home.svg"
+                alt="home icon"
+                aria-label="home icon"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a href="bookmarks.html" aria-label="Bookmarks"
+              ><img
+                src="./Images/bookmark.svg"
+                alt="bookmarks icon"
+                aria-label="bookmarks icon"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a href="profile.html" aria-label="Profile"
+              ><img
+                src="./Images/profile.svg"
+                alt="profile icon"
+                aria-label="profile icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
