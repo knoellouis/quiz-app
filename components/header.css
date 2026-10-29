@@ -1,8 +1,9 @@
-.app__header .app__title {
-  font-family: var(--font-heading);
+.app__header {
+  padding: 2em 0;
 }
 
 .app__title {
+  font-family: var(--font-heading);
   max-width: var(--content-max-width);
   width: var(--base-width);
   margin: 0 auto;
