@@ -44,6 +44,7 @@
 
 body {
   font-family: var(--font-body), sans-serif;
+  font-size: 22px;
   line-height: 1.5;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -61,13 +62,13 @@ h6 {
   color: var(--color-text);
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 h4 {
   font-size: 1.25rem;
@@ -83,6 +84,9 @@ p {
 ul {
   list-style: none;
   padding: 0;
+}
+ul:not(.nav) {
+  margin: 2em 0 1em;
 }
 
 a {

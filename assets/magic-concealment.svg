@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 150" role="img" aria-label="Magical concealment symbol">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0b0"/>
+      <stop offset="50%" stop-color="#e9b85c"/>
+      <stop offset="100%" stop-color="#a66b29"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M49 76 Q90 31 131 76 Q90 121 49 76Z" stroke-width="3"/>
+    <circle cx="90" cy="76" r="17" stroke-width="2.5"/>
+    <path d="M61 105 L119 47" stroke-width="4"/>
+    <path d="M31 76 Q15 48 43 29 M137 108 Q162 88 145 59" stroke-width="1.5" opacity=".7" stroke-dasharray="35 65">
+      <animate attributeName="stroke-dashoffset" values="100;0;-100" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#ffe6a0">
+    <path d="M34 40 L36 46 L42 48 L36 50 L34 56 L32 50 L26 48 L32 46Z">
+      <animate attributeName="opacity" values=".2;1;.2" dur="1.6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 34 48;90 34 48;180 34 48;270 34 48;360 34 48" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M143 29 L145 35 L151 37 L145 39 L143 45 L141 39 L135 37 L141 35Z">
+      <animate attributeName="opacity" values="1;.25;1" dur="1.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M145 111 L147 117 L153 119 L147 121 L145 127 L143 121 L137 119 L143 117Z">
+      <animate attributeName="opacity" values=".2;1;.2" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M42 112 L43.5 116.5 L48 118 L43.5 119.5 L42 124 L40.5 119.5 L36 118 L40.5 116.5Z">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M90 13 L92 19 L98 21 L92 23 L90 29 L88 23 L82 21 L88 19Z">
+      <animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M113 124 L114.5 128.5 L119 130 L114.5 131.5 L113 136 L111.5 131.5 L107 130 L111.5 128.5Z">
+      <animate attributeName="opacity" values="1;.2;1" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#f5cb73">
+    <circle cx="23" cy="91" r="1.5"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="155" cy="76" r="2"><animate attributeName="opacity" values="1;0;1" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="122" cy="19" r="1.4"><animate attributeName="opacity" values=".2;1;.2" dur="1.3s" repeatCount="indefinite"/></circle>
+    <circle cx="61" cy="133" r="1.3"><animate attributeName="opacity" values="1;.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
