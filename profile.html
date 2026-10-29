@@ -6,5 +6,90 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Thinkly - Profile</title>
   </head>
-  <body></body>
+  <body class="app">
+    <a class="skip-link" href="#main-content">
+      <span>Skip to main content </span></a
+    >
+    <header class="app__header">
+      <h1 class="app__title">Thinkly</h1>
+    </header>
+    <main id="main-content">
+      <section id="about" class="about" aria-labelledby="about__headline">
+        <div class="about__user">
+          <img
+            src="./images/profile-image.jpg"
+            alt="user profile image"
+            class="about__image"
+          />
+          <h2 id="about__headline" class="about__headline">Keikeidi</h2>
+        </div>
+        <h3 class="about__headline">About me</h3>
+        <p class="about__text">
+          Professional overthinker, part-time snack enthusiast, and full-time
+          trivia legend (in my own head). I know a little about a lot, a lot
+          about nothing, and somehow always forget why I walked into a room.
+          🧠✨
+        </p>
+      </section>
+      <section id="overview" class="overview" aria-label="overview">
+        <ul class="overview__items">
+          <li class="overview__item">
+            <a href="index.html" aria-label="home">
+              <img src="./assets/question.svg" alt="questions icon" />
+              <span>10</span>
+            </a>
+          </li>
+          <li class="overview__item">
+            <a href="bookmarks.html" aria-label="bookmarks">
+              <img src="./assets/bookmark.svg" alt="bookmark icon" />
+              <span>5</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="settings" class="settings">
+        <h2 class="settings__headline">Settings</h2>
+        <div class="setting">
+          <label for="dark-mode" class="setting__label">Dark mode</label>
+          <input
+            type="checkbox"
+            id="dark-mode"
+            name="dark-mode"
+            role="switch"
+            class="setting__input"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="index.html" aria-current="page" aria-label="Home"
+              ><img
+                src="./assets/home.svg"
+                alt="home icon"
+                aria-label="home icon"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a href="bookmarks.html" aria-label="Bookmarks"
+              ><img
+                src="./assets/bookmark.svg"
+                alt="bookmark icon"
+                aria-label="bookmarks icon"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a href="profile.html" aria-label="Profile"
+              ><img
+                src="./assets/profile.svg"
+                alt="profile icon"
+                aria-label="profile icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
