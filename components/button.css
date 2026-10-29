@@ -1,9 +1,9 @@
 button {
-  background-color: var(--color-button);
+  background-color: var(--color-primary);
   outline: none;
   border: none;
   padding: 12px 20px;
-  border: 1px solid var(--color-gold);
+  border: 1px solid var(--color-secondary);
   border-radius: var(--radius-button);
   color: var(--color-text);
   cursor: pointer;

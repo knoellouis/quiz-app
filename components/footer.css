@@ -2,12 +2,24 @@ footer {
   position: sticky;
   bottom: 0;
   left: 0;
-  background-color:;
+  background-color: var(--color-background);
   width: 100%;
+  z-index: 100;
 }
 
 footer nav .nav {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+footer .nav__item a {
+  color: var(--color-text-muted);
+  /* color: purple; */
+
+  /* fill: purple; */
+}
+
+footer .icon {
+  background-color: inherit;
 }

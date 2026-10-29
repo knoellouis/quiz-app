@@ -19,8 +19,19 @@
   padding: 0;
   width: 25px;
   height: 25px;
+  color: var(--color-text-muted);
 }
 
 .question-card__answer {
   font-family: var(--font-question);
+}
+
+.question-card__bookmark .icon {
+  background-color: inherit;
+  fill: none;
+  stroke: var(--color-text-muted);
+}
+
+.question-card__bookmark[aria-pressed*="true"] .icon {
+  fill: var(--color-text-muted);
 }
