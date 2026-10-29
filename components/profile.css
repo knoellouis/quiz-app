@@ -1,0 +1,137 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background: var(--color-background--light);
+  padding: 30px 20px;
+  border-radius: var(--radius-card);
+}
+
+.about__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 33%;
+}
+
+.about__user-description {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+.about__user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about__text {
+  font-size: 17px;
+}
+
+.overview__items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.overview__item {
+  background-color: var(--color-parchment);
+  font-size: 0.75em;
+  padding: 5px 16px;
+  border-radius: var(--radius-button);
+}
+.overview__item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-primary);
+}
+
+.overview__item a > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+}
+
+.overview__item a > span:last-child {
+  font-weight: 700;
+}
+
+.button__icon--bookmark {
+  fill: var(--color-primary);
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  background: var(--color-background--light);
+  padding: 30px 20px;
+  border-radius: var(--radius-card);
+}
+
+.setting {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.setting__switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.setting__switch input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.setting__slider {
+  position: absolute;
+  inset: 0;
+  background: #64748b;
+  border-radius: 999px;
+  pointer-events: none;
+  transition: background-color 0.25s ease;
+}
+
+.setting__slider::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 3px;
+  left: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+.setting__switch input:checked + .setting__slider {
+  background: var(--color-secondary);
+}
+
+.setting__switch input:checked + .setting__slider::before {
+  transform: translateX(20px);
+}
+
+.setting__switch input:focus-visible + .setting__slider {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 3px;
+}

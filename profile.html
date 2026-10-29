@@ -22,40 +22,71 @@
       <section id="about" class="about" aria-labelledby="about__headline">
         <div class="about__user">
           <img
-            class="button__icon"
             src="./images/profile-image.jpg"
             alt="user profile image"
-            class="about__image"
+            class="about__user-image"
           />
-          <h2 id="about__headline" class="about__headline">Keikeidi</h2>
+          <h2 id="about__user-headline" class="about__user-headline">
+            @Keikeidi
+          </h2>
         </div>
-        <h3 class="about__headline">About me</h3>
-        <p class="about__text">
-          Professional overthinker, part-time snack enthusiast, and full-time
-          trivia legend (in my own head). I know a little about a lot, a lot
-          about nothing, and somehow always forget why I walked into a room.
-          🧠✨
-        </p>
+        <div class="about__user-description">
+          <h3 class="about__headline">About me</h3>
+          <p class="about__text">
+            Professional overthinker, part-time snack enthusiast, and full-time
+            trivia legend (in my own head). I know a little about a lot, a lot
+            about nothing, and somehow always forget why I walked into a room.
+            🧠✨
+          </p>
+        </div>
       </section>
-      <section id="overview" class="overview" aria-label="overview">
+      <section id="overview" aria-label="overview">
         <ul class="overview__items">
           <li class="overview__item">
             <a href="index.html" aria-label="home">
-              <img
-                class="button__icon"
-                src="./assets/question.svg"
-                alt="questions icon"
-              />
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="button__icon--questions"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  <path d="M12 17h.01" />
+                </svg>
+                <span>questions</span>
+              </span>
               <span>10</span>
             </a>
           </li>
           <li class="overview__item">
             <a href="bookmarks.html" aria-label="bookmarks">
-              <img
-                class="button__icon"
-                src="./assets/bookmark.svg"
-                alt="bookmark icon"
-              />
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="button__icon--bookmark"
+                >
+                  <path
+                    d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+                  />
+                </svg>
+                <span>bookmarks</span>
+              </span>
               <span>5</span>
             </a>
           </li>
@@ -64,14 +95,17 @@
       <section id="settings" class="settings">
         <h2 class="settings__headline">Settings</h2>
         <div class="setting">
-          <label for="dark-mode" class="setting__label">Dark mode</label>
-          <input
-            type="checkbox"
-            id="dark-mode"
-            name="dark-mode"
-            role="switch"
-            class="setting__input"
-          />
+          <label for="dark-mode" class="setting__label"> Dark mode </label>
+
+          <label class="setting__switch">
+            <input
+              type="checkbox"
+              id="dark-mode"
+              name="dark-mode"
+              role="switch"
+            />
+            <span class="setting__slider"></span>
+          </label>
         </div>
       </section>
     </main>

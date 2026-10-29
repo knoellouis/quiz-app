@@ -21,6 +21,7 @@
   --radius-button: 10px;
   --space-card: 24px;
   --content-max-width: 768px;
+  --content-max-width--small: 400px;
   --base-width: 92%;
 
   /* Transition */
@@ -42,12 +43,18 @@
   color: var(--color-text--light);
 }
 
+html,
+body {
+  min-height: 100dvh;
+}
+
 body {
   font-family: var(--font-body), sans-serif;
   font-size: 22px;
   line-height: 1.5;
   background-color: var(--color-background);
   color: var(--color-text);
+  min-height: 100dvh;
 }
 
 h1,
@@ -86,7 +93,7 @@ ul {
   padding: 0;
 }
 ul:not(.nav) {
-  margin: 2em 0 1em;
+  margin: 1.5em 0;
 }
 
 a {
