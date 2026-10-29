@@ -9,6 +9,7 @@
 
   /* Text */
   --color-text: #f8f4ec;
+  --color-text--dark: #171a2b;
   --color-text-muted: #c2c2ca;
 
   /* Typography */
@@ -52,9 +53,14 @@ body {
   font-family: var(--font-body), sans-serif;
   font-size: 22px;
   line-height: 1.5;
+  min-height: 100dvh;
+  background-color: var(--color-parchment);
+  color: var(--color-text--dark);
+}
+
+html.dark-mode body {
   background-color: var(--color-background);
   color: var(--color-text);
-  min-height: 100dvh;
 }
 
 h1,
