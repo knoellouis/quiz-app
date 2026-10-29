@@ -1,4 +1,8 @@
 button {
+  cursor: pointer;
+}
+
+button.question-card__button {
   background-color: var(--color-primary);
   outline: none;
   border: none;
@@ -6,5 +10,11 @@ button {
   border: 1px solid var(--color-secondary);
   border-radius: var(--radius-button);
   color: var(--color-text);
-  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 16px;
+  transition: var(--base-transition);
+}
+
+button.question-card__button:hover {
+  background-color: var(--color-forest);
 }

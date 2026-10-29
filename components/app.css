@@ -13,7 +13,7 @@
 #main-content {
   max-width: var(--content-max-width);
   width: var(--base-width);
-  margin: 0 auto;
+  margin: 0 auto var(--space-card);
 }
 
 .questions {

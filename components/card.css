@@ -24,6 +24,12 @@
 
 .question-card__answer {
   font-family: var(--font-question);
+  visibility: hidden;
+}
+
+.question-card:has(.question-card__button[aria-expanded="true"])
+  .question-card__answer {
+  visibility: visible;
 }
 
 .question-card__bookmark .icon {
@@ -34,4 +40,19 @@
 
 .question-card__bookmark[aria-pressed*="true"] .icon {
   fill: var(--color-text-muted);
+}
+
+.question-card__tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.question-card__tag {
+  background-color: var(--color-parchment);
+  color: var(--color-primary);
+  font-size: 0.5em;
+  padding: 5px 16px;
+  border-radius: var(--radius-button);
 }
