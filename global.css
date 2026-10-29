@@ -1,0 +1,96 @@
+:root {
+  /* Brand */
+  --color-background: #171a2b;
+  --color-button: #672d3d;
+  --color-gold: #d5b46a;
+  --color-parchment: #f2e9d8;
+  --color-forest: #263d35;
+  --color-background--light: #34384a;
+
+  /* Text */
+  --color-text: #f8f4ec;
+  --color-text-muted: #c2c2ca;
+
+  /* Typography */
+  --font-heading: "Cinzel", serif;
+  --font-question: "Lora", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Layout */
+  --radius-card: 16px;
+  --radius-button: 10px;
+  --space-card: 24px;
+  --content-max-width: 1100px;
+  --base-width: 92%;
+
+  /* Transition */
+  --base-transition: all 0.3s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-text--light);
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-question), serif;
+  line-height: 1.2;
+  margin: 0.5em 0;
+  color: var(--color-primary);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 1em 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: var(--base-transition);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}

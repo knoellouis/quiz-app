@@ -1,0 +1,10 @@
+.app__header .app__title {
+  font-family: var(--font-heading);
+}
+
+.app__title {
+  max-width: var(--content-max-width);
+  width: var(--base-width);
+  margin: 0 auto;
+  text-align: center;
+}
