@@ -11,15 +11,20 @@
 
 .question-card__bookmark {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 20px;
-  transform: translateY(-50%);
   background-color: transparent;
   border: none;
   padding: 0;
   width: 25px;
   height: 25px;
   color: var(--color-text-muted);
+  transition: var(--base-transition);
+}
+
+.question-card__title {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .question-card__placeholder {
@@ -62,6 +67,10 @@
 
 .question-card__bookmark[aria-pressed*="true"] .icon {
   fill: var(--color-text-muted);
+}
+.question-card__bookmark[aria-pressed*="true"] {
+  top: 0;
+  transform: translateY(-50%);
 }
 
 .question-card__tags {
