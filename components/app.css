@@ -14,7 +14,7 @@
   max-width: var(--content-max-width);
   width: var(--base-width);
   margin: 0 auto var(--space-card);
-  min-height: 100vh;
+  flex-grow: 1;
 }
 
 .questions {

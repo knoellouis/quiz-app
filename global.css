@@ -44,11 +44,6 @@
   color: var(--color-text--light);
 }
 
-html,
-body {
-  min-height: 100dvh;
-}
-
 body {
   font-family: var(--font-body), sans-serif;
   font-size: 22px;
@@ -56,6 +51,8 @@ body {
   min-height: 100dvh;
   background-color: var(--color-parchment);
   color: var(--color-text--dark);
+  display: flex;
+  flex-direction: column;
 }
 
 html.dark-mode body {
