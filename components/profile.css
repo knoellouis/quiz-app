@@ -74,11 +74,13 @@
 .settings {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
   background: var(--color-background--light);
-  padding: 30px 20px;
+  padding: 20px 30px;
   border-radius: var(--radius-card);
+  max-width: var(--content-max-width--small);
+  width: var(--base-width);
+  margin: 0 auto;
 }
 
 .setting {
