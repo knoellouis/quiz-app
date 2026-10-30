@@ -14,7 +14,7 @@ footer {
 footer nav {
   width: 80%;
   margin: 0 auto;
-  background-color: #202337;
+  background-color: var(--color-background--footer);
   border-radius: 50px;
   padding: 0.5em 0;
 }
@@ -42,4 +42,11 @@ footer .nav__item .icon {
 footer .nav__item a[aria-current="page"],
 footer .nav__item a:hover {
   color: var(--color-secondary);
+}
+
+@media (prefers-color-scheme: light) {
+  footer .nav__item a[aria-current="page"],
+  footer .nav__item a:hover {
+    color: var(--color-primary);
+  }
 }

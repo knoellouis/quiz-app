@@ -21,3 +21,9 @@ button.question-card__button:hover {
 button:focus-visible {
   outline: auto;
 }
+
+@media (prefers-color-scheme: light) {
+  button.question-card__button {
+    color: var(--color-text--contrast);
+  }
+}

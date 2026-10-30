@@ -6,10 +6,11 @@
   --color-parchment: #f2e9d8;
   --color-forest: #263d35;
   --color-background--light: #34384a;
+  --color-background--footer: #202337;
 
   /* Text */
   --color-text: #f8f4ec;
-  --color-text--dark: #171a2b;
+  --color-text--contrast: #171a2b;
   --color-text-muted: #c2c2ca;
 
   /* Typography */
@@ -27,6 +28,24 @@
 
   /* Transition */
   --base-transition: all 0.3s ease-in-out;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Brand */
+    --color-background: #f5efe3;
+    --color-primary: #672d3d;
+    --color-secondary: #d5b46a;
+    --color-parchment: #f2e9d8;
+    --color-forest: #263d35;
+    --color-background--light: #fffcf6;
+    --color-background--footer: #d8cebc;
+
+    /* Text */
+    --color-text: #352c29;
+    --color-text--contrast: #f8f4ec;
+    --color-text-muted: #534641;
+  }
 }
 
 *,
