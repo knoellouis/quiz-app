@@ -1,16 +1,16 @@
 footer {
   position: sticky;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   background-color: #202337;
-  border-top-left-radius: var(--radius-card);
-  border-top-right-radius: var(--radius-card);
-  border: 1px solid #65583f;
-  border-bottom: none;
+  border-radius: var(--radius-card);
+  /* border-top-right-radius: var(--radius-card); */
+  /* border: 1px solid #65583f; */
+  /* border-bottom: none; */
   max-width: var(--content-max-width);
   width: 100%;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 0.5em 0;
   z-index: 100;
 }
 
