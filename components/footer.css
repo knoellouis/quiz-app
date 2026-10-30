@@ -33,6 +33,8 @@ footer .nav__item a {
   text-align: center;
   gap: 5px;
   transition: var(--base-transition);
+  position: relative;
+  padding-bottom: 2px;
 }
 
 footer .nav__item .icon {
@@ -48,5 +50,16 @@ footer .nav__item a:hover {
   footer .nav__item a[aria-current="page"],
   footer .nav__item a:hover {
     color: var(--color-primary);
+  }
+  footer .nav__item a[aria-current="page"]::after,
+  footer .nav__item a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
   }
 }
