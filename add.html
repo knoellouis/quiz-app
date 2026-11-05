@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" class="dark-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="./js/app.js" defer></script>
+
+    <title>Thinkly - Add New Questions</title>
+  </head>
+  <body class="app">
+    <a class="skip-link" href="#main-content">
+      <span>Skip to main content </span></a
+    >
+    <header class="app__header">
+      <h1 class="app__title">Thinkly ⚡️</h1>
+    </header>
+    <main id="main-content">
+      <form aria-labelledby="form-title">
+        <legend id="form-title">Create Your Own Quiz</legend>
+        <label for="questionInput">Your question:</label>
+        <textarea
+          name="questionInput"
+          id="questionInput"
+          rows="7"
+          maxlength="150"
+        ></textarea>
+        <label for="answerInput">Your answer:</label>
+        <textarea
+          name="answerInput"
+          id="answerInput"
+          rows="7"
+          maxlength="150"
+        ></textarea>
+        <label for="tagInput">Tag:</label>
+        <input type="text" name="tagInput" id="tagInput" />
+        <button type="button">Submit</button>
+      </form>
+      <div class="questions">
+        <!-- Question 1 -->
+
+        <article class="question-card">
+          <button
+            type="button"
+            aria-label="bookmark question"
+            aria-pressed="true"
+            class="question-card__bookmark"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </button>
+          <h2 class="question-card__title">
+            What is the name of the school that Harry Potter attends?
+          </h2>
+          <img
+            src="./assets/magic-concealment.svg"
+            alt="answer concealment image"
+            aria-hidden="true"
+            class="question-card__placeholder"
+          />
+          <p id="answer-1" class="question-card__answer">
+            Hogwarts School of Witchcraft and Wizardry
+          </p>
+          <button
+            class="question-card__button"
+            aria-expanded="true"
+            aria-controls="answer-1"
+          >
+            Conceal Answer
+          </button>
+          <ul class="question-card__tags">
+            <li class="question-card__tag">Harry Potter</li>
+            <li class="question-card__tag">Hogwarts</li>
+            <li class="question-card__tag">Fiction</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="index.html" aria-label="Home"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon"
+              >
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path
+                  d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="bookmarks.html" aria-label="Bookmarks">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon"
+              >
+                <path
+                  d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="add.html"
+              aria-current="page"
+              aria-label="Add New Questions"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12h8" />
+                <path d="M12 8v8" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="profile.html" aria-label="Profile"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon"
+              >
+                <circle cx="12" cy="8" r="5" />
+                <path d="M20 21a8 8 0 0 0-16 0" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
