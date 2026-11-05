@@ -21,25 +21,40 @@
       <h1 class="app__title">Thinkly ⚡️</h1>
     </header>
     <main id="main-content">
-      <form aria-labelledby="form-title" class="form__addQuestions">
-        <legend id="form-title">Create Your Own Quiz</legend>
-        <label for="questionInput">Your question:</label>
-        <textarea
-          name="questionInput"
-          id="questionInput"
-          rows="7"
-          maxlength="150"
-        ></textarea>
-        <label for="answerInput">Your answer:</label>
-        <textarea
-          name="answerInput"
-          id="answerInput"
-          rows="7"
-          maxlength="150"
-        ></textarea>
-        <label for="tagInput">Tag:</label>
-        <input type="text" name="tagInput" id="tagInput" />
-        <button type="button">Submit</button>
+      <form
+        aria-labelledby="form-title"
+        aria-describedby="form-description"
+        class="form__addQuestions"
+      >
+        <fieldset class="form__fields">
+          <legend id="form-title" class="form__title">
+            Create Your Own Quiz
+          </legend>
+          <p id="form-description" class="form__description">Add a new card</p>
+          <div class="field__wrapper">
+            <label for="questionInput">Your question</label>
+            <textarea
+              name="questionInput"
+              id="questionInput"
+              rows="7"
+              maxlength="150"
+            ></textarea>
+          </div>
+          <div class="field__wrapper">
+            <label for="answerInput">Your answer</label>
+            <textarea
+              name="answerInput"
+              id="answerInput"
+              rows="7"
+              maxlength="150"
+            ></textarea>
+          </div>
+          <div class="field__wrapper">
+            <label for="tagInput">Tag</label>
+            <input type="text" name="tagInput" id="tagInput" />
+          </div>
+          <button type="button" class="button__newQuestion">Submit</button>
+        </fieldset>
       </form>
       <div class="questions">
         <!-- Question 1 -->
