@@ -8,6 +8,11 @@ const darkmodeInput = document.querySelector('[data-js="dark-mode-input"]');
 
 const savedTheme = localStorage.getItem("darkmode");
 
+document.documentElement.classList.toggle(
+  "dark-mode--active",
+  savedTheme === "true",
+);
+
 bookmarkButtons.forEach((bookmarkButton) => {
   bookmarkButton.addEventListener("click", () => {
     if (bookmarkButton.classList.contains("bookmarked")) {
@@ -45,10 +50,12 @@ cards.forEach((card) => {
 });
 
 if (darkmodeInput) {
+  darkmodeInput.checked = savedTheme === "true";
   darkmodeInput.addEventListener("change", () => {
     document.documentElement.classList.toggle(
       "dark-mode--active",
       darkmodeInput.checked,
     );
+    localStorage.setItem("darkmode", darkmodeInput.checked);
   });
 }
