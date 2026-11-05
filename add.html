@@ -25,6 +25,7 @@
         aria-labelledby="form-title"
         aria-describedby="form-description"
         class="form__addQuestions"
+        data-js="form-add-questions"
       >
         <fieldset class="form__fields">
           <legend id="form-title" class="form__title">
@@ -38,6 +39,7 @@
               id="questionInput"
               rows="7"
               maxlength="150"
+              data-js="question-input"
             ></textarea>
           </div>
           <div class="field__wrapper">
@@ -47,18 +49,24 @@
               id="answerInput"
               rows="7"
               maxlength="150"
+              data-js="answer-input"
             ></textarea>
           </div>
           <div class="field__wrapper">
             <label for="tagInput">Tag</label>
-            <input type="text" name="tagInput" id="tagInput" />
+            <input
+              type="text"
+              name="tagInput"
+              id="tagInput"
+              data-js="tag-input"
+            />
           </div>
-          <button type="button" class="button__newQuestion">Submit</button>
+          <button type="submit" class="button__newQuestion">Submit</button>
         </fieldset>
       </form>
-      <div class="questions">
+      <div class="questions" data-js="questions-container">
         <!-- Question 1 -->
-        <article class="question-card" data-js="question-card">
+        <!-- <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
@@ -116,7 +124,7 @@
             <li class="question-card__tag">Hogwarts</li>
             <li class="question-card__tag">Fiction</li>
           </ul>
-        </article>
+        </article> -->
       </div>
     </main>
     <footer>
