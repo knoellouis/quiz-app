@@ -2,7 +2,8 @@ button {
   cursor: pointer;
 }
 
-button.question-card__button {
+button.question-card__button,
+button.button__newQuestion {
   background-color: var(--color-primary);
   outline: none;
   padding: 12px 20px;
@@ -14,7 +15,8 @@ button.question-card__button {
   transition: var(--base-transition);
 }
 
-button.question-card__button:hover {
+button.question-card__button:hover,
+button.button__newQuestion:hover {
   background-color: var(--color-forest);
 }
 

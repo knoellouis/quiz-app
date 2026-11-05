@@ -8,6 +8,8 @@ const darkmodeInput = document.querySelector('[data-js="dark-mode-input"]');
 
 const savedTheme = localStorage.getItem("darkmode");
 
+console.log(savedTheme);
+
 document.documentElement.classList.toggle(
   "dark-mode--active",
   savedTheme === "true",
