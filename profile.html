@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark-mode">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,8 @@
       href="./favicons/favicon.ico"
       type="image/x-icon"
     />
+    <script src="./js/app.js" defer></script>
+
     <title>Thinkly - Profile</title>
   </head>
   <body class="app">
@@ -103,7 +105,8 @@
               id="dark-mode"
               name="dark-mode"
               role="switch"
-              checked
+              class="dark-mode__input"
+              data-js="dark-mode-input"
             />
             <span class="setting__slider"></span>
           </label>
@@ -146,11 +149,31 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-bookmark preview-icon"
+                class="icon"
               >
                 <path
                   d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
                 />
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="add.html" aria-label="Add New Questions">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12h8" />
+                <path d="M12 8v8" />
               </svg>
             </a>
           </li>
@@ -166,7 +189,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-user-round preview-icon"
+                class="icon"
               >
                 <circle cx="12" cy="8" r="5" />
                 <path d="M20 21a8 8 0 0 0-16 0" />

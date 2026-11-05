@@ -1,17 +1,17 @@
 :root {
-  /* Brand */
-  --color-background: #171a2b;
+  --color-background: #f5efe3;
   --color-primary: #672d3d;
   --color-secondary: #d5b46a;
+  --color-nav-active: var(--color-primary);
   --color-parchment: #f2e9d8;
   --color-forest: #263d35;
-  --color-background--light: #34384a;
-  --color-background--footer: #202337;
+  --color-background--light: #fffcf6;
+  --color-background--footer: #d8cebc;
 
   /* Text */
-  --color-text: #f8f4ec;
-  --color-text--contrast: #171a2b;
-  --color-text-muted: #c2c2ca;
+  --color-text: #352c29;
+  --color-text--contrast: #f8f4ec;
+  --color-text-muted: #6e5d56;
 
   /* Typography */
   --font-heading: "Cinzel", serif;
@@ -30,22 +30,19 @@
   --base-transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Brand */
-    --color-background: #f5efe3;
-    --color-primary: #672d3d;
-    --color-secondary: #d5b46a;
-    --color-parchment: #f2e9d8;
-    --color-forest: #263d35;
-    --color-background--light: #fffcf6;
-    --color-background--footer: #d8cebc;
+:root.dark-mode--active {
+  --color-background: #171a2b;
+  --color-primary: #d5b46a;
+  --color-secondary: #e6c982;
+  --color-nav-active: var(--color-secondary);
+  --color-parchment: #252a40;
+  --color-forest: #3b6658;
+  --color-background--light: #34384a;
+  --color-background--footer: #202337;
 
-    /* Text */
-    --color-text: #352c29;
-    --color-text--contrast: #f8f4ec;
-    --color-text-muted: #6e5d56;
-  }
+  --color-text: #f8f4ec;
+  --color-text--contrast: #171a2b;
+  --color-text-muted: #c2c2ca;
 }
 
 *,
@@ -60,7 +57,7 @@
 
 ::selection {
   background: var(--color-primary);
-  color: var(--color-text--light);
+  color: var(--color-text--contrast);
 }
 
 body {
@@ -68,15 +65,10 @@ body {
   font-size: 22px;
   line-height: 1.5;
   min-height: 100dvh;
-  background-color: var(--color-parchment);
-  color: var(--color-text--dark);
-  display: flex;
-  flex-direction: column;
-}
-
-html.dark-mode body {
   background-color: var(--color-background);
   color: var(--color-text);
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
