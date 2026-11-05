@@ -79,7 +79,9 @@ form.addEventListener("submit", (event) => {
   const answer = data.answerInput;
   const tag = data.tagInput;
 
-  questionsContainer.innerHTML = `<article class="question-card" data-js="question-card">
+  questionsContainer.insertAdjacentHTML(
+    "afterbegin",
+    `<article class="question-card" data-js="question-card">
       <button
         type="button"
         aria-label="bookmark question"
@@ -127,7 +129,8 @@ form.addEventListener("submit", (event) => {
       <ul class="question-card__tags">
         <li class="question-card__tag">${tag}</li>
       </ul>
-    </article>`;
+    </article>`,
+  );
 
   //   questionsContainer.prepend(newQuestion);
 
