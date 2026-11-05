@@ -65,10 +65,10 @@
   stroke: var(--color-text-muted);
 }
 
-.question-card__bookmark[aria-pressed*="true"] .icon {
+.question-card__bookmark.bookmarked .icon {
   fill: var(--color-text-muted);
 }
-.question-card__bookmark[aria-pressed*="true"] {
+.question-card__bookmark.bookmarked {
   top: 0;
   transform: translateY(-50%);
 }
