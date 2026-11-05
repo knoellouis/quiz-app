@@ -4,6 +4,8 @@
   gap: 20px;
   margin: 0 auto 60px;
   max-width: var(--content-max-width--small);
+  font-family: var(--font-body);
+  color: var(--color-tex);
 }
 
 .form__fields {
@@ -24,11 +26,21 @@ form textarea,
 form input[type="text"] {
   background: var(--color-background--light);
   border: none;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid transparent;
+}
+
+form textarea:focus-visible,
+form input[type="text"]:focus-visible {
+  outline: var(--color-form-border) 1px solid;
+  border: var(--color-form-border) 1px solid;
 }
 
 form textarea {
   resize: none;
   border-radius: var(--radius-card);
+  padding: 20px;
 }
 
 form input[type="text"] {
