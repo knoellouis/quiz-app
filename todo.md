@@ -1,6 +1,6 @@
 To do:
 
-- toggle bookmark button on cards
+- toggle bookmark button on cards ☑️
 - toggle answer visibility
 - create a new Add page
   - users should be able to submit their own questions with answers and hashtags
