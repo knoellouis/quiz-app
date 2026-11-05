@@ -3,10 +3,10 @@
   --color-primary: #672d3d;
   --color-secondary: #d5b46a;
   --color-nav-active: var(--color-primary);
-  --color-parchment: #f2e9d8;
+  --color-parchment: #d8cebc;
   --color-forest: #263d35;
   --color-background--light: #fffcf6;
-  --color-background--footer: #d8cebc;
+  --color-background--dark: #d8cebc;
   --color-form-border: #263d35;
 
   /* Text */
@@ -39,7 +39,7 @@
   --color-parchment: #f2e9d8;
   --color-forest: #3b6658;
   --color-background--light: #34384a;
-  --color-background--footer: #202337;
+  --color-background--dark: #202337;
   --color-form-border: #e6c982;
 
   --color-text: #f8f4ec;

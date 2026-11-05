@@ -11,7 +11,7 @@ footer {
 footer nav {
   width: 80%;
   margin: 0 auto;
-  background-color: var(--color-background--footer);
+  background-color: var(--color-background--dark);
   border-radius: 50px;
   padding: 0.5em 0;
 }

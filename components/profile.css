@@ -111,7 +111,7 @@
 .setting__slider {
   position: absolute;
   inset: 0;
-  background: #64748b;
+  background: var(--color-background--dark);
   border-radius: 999px;
   pointer-events: none;
   transition: background-color 0.25s ease;
