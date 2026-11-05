@@ -40,7 +40,7 @@ footer .nav__item .icon {
 
 footer .nav__item a[aria-current="page"],
 footer .nav__item a:hover {
-  color: var(--color-secondary);
+  color: var(--color-nav-active);
 }
 
 footer .nav__item a[aria-current="page"]::after,
@@ -51,17 +51,6 @@ footer .nav__item a:hover::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-nav-active);
   border-radius: 2px;
-}
-
-@media (prefers-color-scheme: light) {
-  footer .nav__item a[aria-current="page"],
-  footer .nav__item a:hover {
-    color: var(--color-primary);
-  }
-  footer .nav__item a[aria-current="page"]::after,
-  footer .nav__item a:hover::after {
-    background-color: var(--color-primary);
-  }
 }

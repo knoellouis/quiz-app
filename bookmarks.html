@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark-mode">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +23,7 @@
     <main id="main-content">
       <!-- Question 1 -->
       <div class="questions">
-        <article class="question-card">
+        <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
@@ -51,23 +51,30 @@
           <h2 class="question-card__title">
             What is the name of the school that Harry Potter attends?
           </h2>
-          <img
-            src="./assets/magic-concealment.svg"
-            alt="answer concealment image"
-            aria-hidden="true"
-            class="question-card__placeholder"
-          />
-          <p id="answer-1" class="question-card__answer" data-js="answer-text">
-            Hogwarts School of Witchcraft and Wizardry
-          </p>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-1"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Hogwarts School of Witchcraft and Wizardry
+            </p>
+          </div>
           <button
-            class="question-card__button"
-            aria-expanded="true"
+            class="question-card__button active"
+            aria-expanded="false"
             aria-controls="answer-1"
             data-js="button-answer"
             type="button"
           >
-            Conceal Answer
+            Reveal Answer
           </button>
           <ul class="question-card__tags">
             <li class="question-card__tag">Harry Potter</li>
@@ -78,7 +85,7 @@
 
         <!-- Question 3 -->
 
-        <article class="question-card">
+        <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
@@ -107,17 +114,24 @@
             What is the name of the lightning bolt-shaped scar on Harry Potter's
             forehead?
           </h2>
-          <img
-            src="./assets/magic-concealment.svg"
-            alt="answer concealment image"
-            aria-hidden="true"
-            class="question-card__placeholder"
-          />
-          <p id="answer-3" class="question-card__answer" data-js="answer-text">
-            His lightning-bolt scar (The Dark Mark)
-          </p>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-3"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              His lightning-bolt scar (The Dark Mark)
+            </p>
+          </div>
           <button
-            class="question-card__button"
+            class="question-card__button active"
             aria-expanded="false"
             aria-controls="answer-3"
             data-js="button-answer"
@@ -134,7 +148,7 @@
 
         <!-- Question 5 -->
 
-        <article class="question-card">
+        <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
@@ -163,17 +177,24 @@
             What is the name of the game played on flying broomsticks in the
             wizarding world?
           </h2>
-          <img
-            src="./assets/magic-concealment.svg"
-            alt="answer concealment image"
-            aria-hidden="true"
-            class="question-card__placeholder"
-          />
-          <p id="answer-5" class="question-card__answer" data-js="answer-text">
-            Quidditch
-          </p>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-5"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Quidditch
+            </p>
+          </div>
           <button
-            class="question-card__button"
+            class="question-card__button active"
             aria-expanded="false"
             aria-controls="answer-5"
             data-js="button-answer"
@@ -190,7 +211,7 @@
 
         <!-- Question 7 -->
 
-        <article class="question-card">
+        <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
@@ -218,17 +239,24 @@
           <h2 class="question-card__title">
             Which professor is the head of Slytherin House at Hogwarts?
           </h2>
-          <img
-            src="./assets/magic-concealment.svg"
-            alt="answer concealment image"
-            aria-hidden="true"
-            class="question-card__placeholder"
-          />
-          <p id="answer-7" class="question-card__answer" data-js="answer-text">
-            Severus Snape
-          </p>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-7"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Severus Snape
+            </p>
+          </div>
           <button
-            class="question-card__button"
+            class="question-card__button active"
             aria-expanded="false"
             aria-controls="answer-7"
             data-js="button-answer"
@@ -245,7 +273,7 @@
 
         <!-- Question 9 -->
 
-        <article class="question-card">
+        <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
@@ -271,17 +299,24 @@
             </svg>
           </button>
           <h2 class="question-card__title">What type of creature is Dobby?</h2>
-          <img
-            src="./assets/magic-concealment.svg"
-            alt="answer concealment image"
-            aria-hidden="true"
-            class="question-card__placeholder"
-          />
-          <p id="answer-9" class="question-card__answer" data-js="answer-text">
-            House Elf
-          </p>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-9"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              House Elf
+            </p>
+          </div>
           <button
-            class="question-card__button"
+            class="question-card__button active"
             aria-expanded="false"
             aria-controls="answer-9"
             data-js="button-answer"

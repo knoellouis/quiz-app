@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark-mode">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,7 @@
       <h1 class="app__title">Thinkly ⚡️</h1>
     </header>
     <main id="main-content">
-      <form aria-labelledby="form-title">
+      <form aria-labelledby="form-title" class="">
         <legend id="form-title">Create Your Own Quiz</legend>
         <label for="questionInput">Your question:</label>
         <textarea
@@ -43,12 +43,11 @@
       </form>
       <div class="questions">
         <!-- Question 1 -->
-
-        <article class="question-card">
+        <article class="question-card" data-js="question-card">
           <button
             type="button"
             aria-label="bookmark question"
-            aria-pressed="true"
+            aria-pressed="false"
             class="question-card__bookmark"
             data-js="button-bookmark"
           >
@@ -72,23 +71,30 @@
           <h2 class="question-card__title">
             What is the name of the school that Harry Potter attends?
           </h2>
-          <img
-            src="./assets/magic-concealment.svg"
-            alt="answer concealment image"
-            aria-hidden="true"
-            class="question-card__placeholder"
-          />
-          <p id="answer-1" class="question-card__answer" data-js="answer-text">
-            Hogwarts School of Witchcraft and Wizardry
-          </p>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-1"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Hogwarts School of Witchcraft and Wizardry
+            </p>
+          </div>
           <button
-            class="question-card__button"
-            aria-expanded="true"
+            class="question-card__button active"
+            aria-expanded="false"
             aria-controls="answer-1"
             data-js="button-answer"
             type="button"
           >
-            Conceal Answer
+            Reveal Answer
           </button>
           <ul class="question-card__tags">
             <li class="question-card__tag">Harry Potter</li>
