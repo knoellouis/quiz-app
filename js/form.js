@@ -4,8 +4,8 @@ const remainingCharactersQuestionElement = document.querySelector(
 const remainingCharactersAnswerElement = document.querySelector(
   '[data-js="answer-character-count"]',
 );
-const questionInputMaxCharacters = questionInput.maxLength;
-const answerInputMaxCharacters = answerInput.maxLength;
+let questionInputMaxCharacters = questionInput.maxLength;
+let answerInputMaxCharacters = answerInput.maxLength;
 
 remainingCharactersQuestionElement.innerHTML = questionInputMaxCharacters;
 remainingCharactersAnswerElement.innerHTML = answerInputMaxCharacters;
@@ -130,4 +130,7 @@ form.addEventListener("submit", (event) => {
       newBookmarkButton.setAttribute("aria-pressed", "true");
     }
   });
+  remainingCharactersQuestionElement.innerHTML = questionInputMaxCharacters;
+  remainingCharactersAnswerElement.innerHTML = answerInputMaxCharacters;
+  form.reset();
 });
