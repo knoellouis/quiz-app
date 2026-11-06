@@ -1,3 +1,14 @@
+const questionCharacterCount = document.querySelector(
+  '[data-js="question-character-count"]',
+);
+const answerCharacterCount = document.querySelector(
+  '[data-js="answer-character-count"]',
+);
+const questionInput = document.querySelector('[data-js="question-input"]');
+const answerInput = document.querySelector('[data-js="answer-input"]');
+
+console.log(questionInput, answerInput);
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);

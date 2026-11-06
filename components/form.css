@@ -48,6 +48,12 @@ form input[type="text"] {
   border-radius: var(--radius-button);
 }
 
+.character-count {
+  align-self: flex-end;
+  font-size: 0.5em;
+  margin: 0;
+}
+
 form button.button__newQuestion {
   align-self: center;
 }
