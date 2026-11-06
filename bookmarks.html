@@ -22,7 +22,338 @@
       <h1 class="app__title">Thinkly ⚡️</h1>
     </header>
     <main id="main-content">
-      <div class="questions" data-js="questions-container"></div>
+      <div class="questions" data-js="questions-container">
+        <!-- Question 1 -->
+        <article
+          id="question-card-1"
+          class="question-card"
+          data-js="question-card"
+        >
+          <button
+            type="button"
+            aria-label="bookmark question"
+            aria-pressed="true"
+            class="question-card__bookmark bookmarked"
+            data-js="button-bookmark"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </button>
+          <h2 class="question-card__title">
+            What is the name of the school that Harry Potter attends?
+          </h2>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-1"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Hogwarts School of Witchcraft and Wizardry
+            </p>
+          </div>
+          <button
+            class="question-card__button active"
+            aria-expanded="false"
+            aria-controls="answer-1"
+            data-js="button-answer"
+            type="button"
+          >
+            Reveal Answer
+          </button>
+          <ul class="question-card__tags">
+            <li class="question-card__tag">Harry Potter</li>
+            <li class="question-card__tag">Hogwarts</li>
+            <li class="question-card__tag">Fiction</li>
+          </ul>
+        </article>
+        <!-- Question 2 -->
+
+        <article
+          id="question-card-2"
+          class="question-card"
+          data-js="question-card"
+        >
+          <button
+            type="button"
+            aria-label="bookmark question"
+            aria-pressed="true"
+            class="question-card__bookmark bookmarked"
+            data-js="button-bookmark"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </button>
+          <h2 class="question-card__title">
+            Who is Harry Potter's best friend throughout the series?
+          </h2>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-2"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Ron Weasley
+            </p>
+          </div>
+          <button
+            class="question-card__button"
+            aria-expanded="false"
+            aria-controls="answer-2"
+            data-js="button-answer"
+            type="button"
+          >
+            Reveal Answer
+          </button>
+          <ul class="question-card__tags">
+            <li class="question-card__tag">Harry Potter</li>
+            <li class="question-card__tag">Characters</li>
+            <li class="question-card__tag">Friends</li>
+          </ul>
+        </article>
+
+        <!-- Question 3 -->
+
+        <article
+          id="question-card-3"
+          class="question-card"
+          data-js="question-card"
+        >
+          <button
+            type="button"
+            aria-label="bookmark question"
+            aria-pressed="true"
+            class="question-card__bookmark bookmarked"
+            data-js="button-bookmark"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </button>
+          <h2 class="question-card__title">
+            What is the name of the lightning bolt-shaped scar on Harry Potter's
+            forehead?
+          </h2>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-3"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              The Dark Mark
+            </p>
+          </div>
+          <button
+            class="question-card__button"
+            aria-expanded="false"
+            aria-controls="answer-3"
+            data-js="button-answer"
+            type="button"
+          >
+            Reveal Answer
+          </button>
+          <ul class="question-card__tags">
+            <li class="question-card__tag">Harry Potter</li>
+            <li class="question-card__tag">Symbolism</li>
+            <li class="question-card__tag">Scar</li>
+          </ul>
+        </article>
+
+        <!-- Question 4 -->
+
+        <article
+          id="question-card-4"
+          class="question-card"
+          data-js="question-card"
+        >
+          <button
+            type="button"
+            aria-label="bookmark question"
+            aria-pressed="true"
+            class="question-card__bookmark bookmarked"
+            data-js="button-bookmark"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </button>
+          <h2 class="question-card__title">
+            Which magical creature guards the entrance to the Gryffindor common
+            room?
+          </h2>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-4"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              The Fat Lady (portrait)
+            </p>
+          </div>
+          <button
+            class="question-card__button"
+            aria-expanded="false"
+            aria-controls="answer-4"
+            data-js="button-answer"
+            type="button"
+          >
+            Reveal Answer
+          </button>
+          <ul class="question-card__tags">
+            <li class="question-card__tag">Harry Potter</li>
+            <li class="question-card__tag">Creatures</li>
+            <li class="question-card__tag">Gryffindor</li>
+          </ul>
+        </article>
+
+        <!-- Question 5 -->
+
+        <article
+          id="question-card-5"
+          class="question-card"
+          data-js="question-card"
+        >
+          <button
+            type="button"
+            aria-label="bookmark question"
+            aria-pressed="true"
+            class="question-card__bookmark bookmarked"
+            data-js="button-bookmark"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </button>
+          <h2 class="question-card__title">
+            What is the name of the game played on flying broomsticks in the
+            wizarding world?
+          </h2>
+          <div class="answer__wrapper">
+            <img
+              src="./assets/magic-concealment.svg"
+              alt="answer concealment image"
+              aria-hidden="true"
+              class="question-card__placeholder visible"
+              data-js="answer-placeholder"
+            />
+            <p
+              id="answer-5"
+              class="question-card__answer"
+              data-js="answer-text"
+            >
+              Quidditch
+            </p>
+          </div>
+          <button
+            class="question-card__button"
+            aria-expanded="false"
+            aria-controls="answer-5"
+            data-js="button-answer"
+            type="button"
+          >
+            Reveal Answer
+          </button>
+          <ul class="question-card__tags">
+            <li class="question-card__tag">Harry Potter</li>
+            <li class="question-card__tag">Sports</li>
+            <li class="question-card__tag">Magic</li>
+          </ul>
+        </article>
+      </div>
     </main>
     <footer>
       <nav aria-label="Main navigation">
