@@ -119,8 +119,6 @@ form.addEventListener("submit", (event) => {
       button.textContent = "Reveal Answer";
       button.setAttribute("aria-expanded", "false");
     }
-
-    console.log("click handler ran");
   });
 
   newBookmarkButton.addEventListener("click", () => {
