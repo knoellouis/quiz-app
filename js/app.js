@@ -4,9 +4,6 @@ const bookmarkButtons = document.querySelectorAll(
 const cards = document.querySelectorAll('[data-js="question-card"]');
 const answerButtons = document.querySelectorAll('[data-js="button-answer"]');
 const answers = document.querySelectorAll('[data-js="answer-text"]');
-const darkmodeInput = document.querySelector('[data-js="dark-mode-input"]');
-
-const savedTheme = localStorage.getItem("darkmode");
 
 const form = document.querySelector('[data-js="form-add-questions"]');
 const questionInput = document.querySelector('[data-js="question-input"]');
@@ -19,6 +16,13 @@ const questionsContainer = document.querySelector(
 
 const bookmarkedCards = [];
 
+const darkmodeInput = document.querySelector('[data-js="dark-mode-input"]');
+
+// saving the localstorage keyword as a variable by using the getItem method, getItem searches for the relevant keyword which was created inside the event listener of the darkmode toggle
+const savedTheme = localStorage.getItem("darkmode");
+
+// on page load, check to see if the savedTheme (local storage setting) is true, if true apply the class dark-mode--active
+// on page load if there is no savedTheme, it will load the default of the website style (aka without darkmode class in this case)
 document.documentElement.classList.toggle(
   "dark-mode--active",
   savedTheme === "true",
@@ -60,13 +64,21 @@ cards.forEach((card) => {
   }
 });
 
+// if darkmode input exists do the following
 if (darkmodeInput) {
+  // if darkmode input is checked, it updates the savedTheme value as "true"
+  //string true instead of boolean because local storage only saves string data types
   darkmodeInput.checked = savedTheme === "true";
+  // darkmode input eventlistener listens for a change
   darkmodeInput.addEventListener("change", () => {
+    // toggle can take more than one argument, the second one is a booleon and basically forces the toggling of the class based on the boolean
+    // if true, it applies the class, if false, it removes the class
     document.documentElement.classList.toggle(
       "dark-mode--active",
       darkmodeInput.checked,
     );
+
+    // setItem, sets and updates local storage, takes a keyword, and a boolean that will get saved as a string
     localStorage.setItem("darkmode", darkmodeInput.checked);
   });
 }
