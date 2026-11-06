@@ -1,13 +1,37 @@
-const questionCharacterCount = document.querySelector(
+const remainingCharactersQuestionElement = document.querySelector(
   '[data-js="question-character-count"]',
 );
-const answerCharacterCount = document.querySelector(
+const remainingCharactersAnswerElement = document.querySelector(
   '[data-js="answer-character-count"]',
 );
-const questionInput = document.querySelector('[data-js="question-input"]');
-const answerInput = document.querySelector('[data-js="answer-input"]');
+const questionInputMaxCharacters = questionInput.maxLength;
+const answerInputMaxCharacters = answerInput.maxLength;
 
-console.log(questionInput, answerInput);
+remainingCharactersQuestionElement.innerHTML = questionInputMaxCharacters;
+remainingCharactersAnswerElement.innerHTML = answerInputMaxCharacters;
+
+function calculateCharactersLeft(maxCharacters, totalCharacters) {
+  return maxCharacters - totalCharacters;
+}
+
+questionInput.addEventListener("input", () => {
+  const numberCharactersTyped = questionInput.value.length;
+  const remainingCharacters = calculateCharactersLeft(
+    questionInputMaxCharacters,
+    numberCharactersTyped,
+  );
+
+  remainingCharactersQuestionElement.innerHTML = remainingCharacters;
+});
+answerInput.addEventListener("input", () => {
+  const numberCharactersTyped = answerInput.value.length;
+  const remainingCharacters = calculateCharactersLeft(
+    answerInputMaxCharacters,
+    numberCharactersTyped,
+  );
+
+  remainingCharactersAnswerElement.innerHTML = remainingCharacters;
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
