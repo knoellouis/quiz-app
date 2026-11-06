@@ -43,13 +43,13 @@ form.addEventListener("submit", (event) => {
 
   questionsContainer.insertAdjacentHTML(
     "afterbegin",
-    `<article class="question-card" data-js="question-card">
+    `<article class="question-card" data-js="question-card-new">
       <button
         type="button"
         aria-label="bookmark question"
         aria-pressed="false"
         class="question-card__bookmark"
-        data-js="button-bookmark"
+        data-js="button-bookmark-new"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -73,9 +73,9 @@ form.addEventListener("submit", (event) => {
           alt="answer concealment image"
           aria-hidden="true"
           class="question-card__placeholder visible"
-          data-js="answer-placeholder"
+          data-js="answer-placeholder-new"
         />
-        <p id="answer-1" class="question-card__answer" data-js="answer-text">
+        <p id="answer-1" class="question-card__answer" data-js="answer-text-new">
           ${answer}
         </p>
       </div>
@@ -83,7 +83,7 @@ form.addEventListener("submit", (event) => {
         class="question-card__button active"
         aria-expanded="false"
         aria-controls="answer-1"
-        data-js="button-answer"
+        data-js="button-answer-new"
         type="button"
       >
         Reveal Answer
@@ -93,4 +93,45 @@ form.addEventListener("submit", (event) => {
       </ul>
     </article>`,
   );
+
+  const newCards = document.querySelectorAll('[data-js="question-card-new"]');
+
+  newCards.forEach((newCard) => {
+    const newAnswerButton = newCard.querySelector(
+      "button[data-js='button-answer-new']",
+    );
+    const button = newCard.querySelector("button[data-js='button-answer-new']");
+    const answer = newCard.querySelector('[data-js="answer-text-new"]');
+    const answerPlaceholder = newCard.querySelector(
+      '[data-js="answer-placeholder-new"]',
+    );
+    const bookmarkButtons = document.querySelectorAll(
+      '[data-js="button-bookmark-new"]',
+    );
+    newAnswerButton.addEventListener("click", () => {
+      answer.classList.toggle("visible");
+      button.classList.toggle("active");
+      answerPlaceholder.classList.toggle("visible");
+
+      if (answer.classList.contains("visible")) {
+        button.textContent = "Conceal Answer";
+        button.setAttribute("aria-expanded", "true");
+      } else {
+        button.textContent = "Reveal Answer";
+        button.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    bookmarkButtons.forEach((bookmarkButton) => {
+      bookmarkButton.addEventListener("click", () => {
+        if (bookmarkButton.classList.contains("bookmarked")) {
+          bookmarkButton.setAttribute("aria-pressed", "false");
+          bookmarkButton.classList.remove("bookmarked");
+        } else {
+          bookmarkButton.classList.add("bookmarked");
+          bookmarkButton.setAttribute("aria-pressed", "true");
+        }
+      });
+    });
+  });
 });
